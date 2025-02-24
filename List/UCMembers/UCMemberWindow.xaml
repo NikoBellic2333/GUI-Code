@@ -72,34 +72,26 @@
         <StackPanel Margin="249,27,277,27" Grid.ColumnSpan="2">
             <Label Content="Team Member" Margin="26,18,0,0" FontSize="20" FontWeight="Bold"/>
             <ListView Height="246" Width="238" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="listview">
-                <local:UCMembers Width="200" Height="57" Title="Mahid" SubTitle="Project Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Zhang" SubTitle="HR Head" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Sponge Bob" SubTitle="Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Trump" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Sam Curren" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (4).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Jacob Ekstard" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Niko" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Bellic" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Tom" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Mahid Ahmed" SubTitle="Project Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Daniel Kart" SubTitle="HR Head" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Elena Michel" SubTitle="Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Danny Joe" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Sam Curren" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (4).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Jacob Ekstard" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Niko" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Bellic" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Tom" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Mahid Ahmed" SubTitle="Project Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Daniel Kart" SubTitle="HR Head" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Elena Michel" SubTitle="Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Danny Joe" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Sam Curren" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (4).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Jacob Ekstard" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Niko" SubTitle="Test Manager" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Bellic" SubTitle="Scrum Master" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (2).png" Margin="5,0,0,5"></local:UCMembers>
-                <local:UCMembers Width="200" Height="57" Title="Tom" SubTitle="Lead Developer" URL="C:\Users\Niko\Desktop\knob\UIApp\WpfApp1\UCMembers\Assent\icons8-avatar-64 (3).png" Margin="5,0,0,5"></local:UCMembers>
-            </ListView>
+    <local:UCMembers Width="200" Height="57" Title="John Doe" SubTitle="Project Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Jane Smith" SubTitle="HR Head" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Michael Brown" SubTitle="Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Emily Johnson" SubTitle="Test Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="David Williams" SubTitle="Scrum Master" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Chris Taylor" SubTitle="Lead Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Laura Garcia" SubTitle="Project Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="James Martinez" SubTitle="HR Head" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Olivia Anderson" SubTitle="Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Robert Thomas" SubTitle="Test Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Alice Jackson" SubTitle="Scrum Master" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Daniel Harris" SubTitle="Lead Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Mason Clark" SubTitle="Project Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Ethan Lewis" SubTitle="HR Head" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Isabella Walker" SubTitle="Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Lucas Young" SubTitle="Test Manager" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Mia King" SubTitle="Scrum Master" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+    <local:UCMembers Width="200" Height="57" Title="Alexander Scott" SubTitle="Lead Developer" URL="C:\path\to\image.png" Margin="5,0,0,5"></local:UCMembers>
+</ListView>
+
             <Button Style="{DynamicResource ButtonStyle1}" Content="Add member" Height="43" Width="237" Margin="0,9,0,0" Background="#FF36BFF4" Foreground="White" FontSize="14"/>
             <Slider x:Name="mySlide"
             Minimum="0"
