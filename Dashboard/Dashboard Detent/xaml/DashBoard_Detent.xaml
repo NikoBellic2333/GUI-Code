@@ -1,0 +1,207 @@
+﻿<UserControl x:Class="WpfApp1.DashBoard_Detent.DashBoard_Detent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.DashBoard_Detent" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <local:GaugeModel_Detent x:Key="model"/>
+        <FontFamily x:Key="Oswald">
+            ./Oswald-Regular.ttf#Oswald
+        </FontFamily>
+        <Style TargetType="{x:Type Path}" x:Key="GaugePanel">
+            <Setter Property="Width" Value="380"/>
+            <Setter Property="Height" Value="380"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <RotateTransform Angle="45"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Path}" x:Key="Separetor">
+            <Setter Property="Data" Value="M200,3 L200,200"/>
+            <Setter Property="Stroke" Value="#0d1746"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="TickStyle">
+            <Setter Property="Foreground" Value="#8A85DF"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{StaticResource Oswald}"/>
+        </Style>
+
+    </UserControl.Resources>
+    <Viewbox Stretch="Fill">
+        <Grid Height="400" Width="400" DataContext="{Binding Source={StaticResource model}}">
+            <Ellipse Width="400" Height="400" Fill="#4b5ba0"/>
+            <Ellipse Width="394" Height="394" Fill="#0d1746"/>
+
+            <!--gaue background-->
+            <Path Fill="#364db1" Style="{StaticResource GaugePanel}">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="190,380">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <ArcSegment Size="190,190"
+                                            IsLargeArc="True"
+                                            SweepDirection="Clockwise"
+                                            Point="380,190"
+                                            />
+                                            <LineSegment Point="190,190"/>
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+
+            <Path Fill="#65b9ff" Style="{StaticResource GaugePanel}">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="190,380">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <ArcSegment Size="190,190"
+                                            IsLargeArc="True"
+                                            SweepDirection="Clockwise"
+                                            Point="380,190"
+                                            x:Name="arcWpf"
+                                            />
+                                            <LineSegment Point="190,190"/>
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <!--Seperator-->
+            <Path Style="{StaticResource Separetor}"/>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="27"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="54"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="81"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="108"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="-27"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="-54"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="-81"/>
+                </Path.RenderTransform>
+            </Path>
+            <Path Style="{StaticResource Separetor}">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="-108"/>
+                </Path.RenderTransform>
+            </Path>
+
+            <!--Center Circle-->
+            <Ellipse Height="355" Width="355" Fill="#0d1746"/>
+
+            <!--Tick container-->
+            <Grid Height="355" Width="355" x:Name="tick_container"/>
+
+            <!--niddle-->
+            <Grid Height="150" Width="20" RenderTransformOrigin="0.5,1.23">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="225" x:Name="niddle"/>
+                        <TranslateTransform Y="-110"/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Row="0" Fill="#FFEF0B46" Width="4">
+                    <Rectangle.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#f34370" ShadowDepth="3" Direction="90"/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Grid.Row="1" Fill="#FFEF0B46" RadiusX="1" RadiusY="1">
+                    <Rectangle.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#f34370" ShadowDepth="3" Direction="90"/>
+                    </Rectangle.Effect>
+                </Rectangle>
+            </Grid>
+
+            <!--Inner Center Circles-->
+            <Ellipse Height="215" Width="215" StrokeThickness="3" Fill="#FF212D62"/>
+
+            <!--TextBlocks-->
+            <TextBlock Text="{Binding Path=Title}" Foreground="#8a85df"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"
+           Margin="0,0,0,100"
+           FontSize="16"
+           FontFamily="{StaticResource Oswald}"/>
+            <TextBlock Text="{Binding Path=ValueString}" Foreground="White"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"
+           FontSize="32"
+           FontFamily="{StaticResource Oswald}"/>
+            <TextBlock Text="{Binding Path=Unit}" Foreground="#8a85df"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"
+           Margin="0,100,0,0"
+           FontSize="20"
+           FontFamily="{StaticResource Oswald}"
+           />
+            <TextBlock Text="{Binding Path=TickUnit}" Foreground="#8a85df"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Bottom"
+           Margin="0,0,0,15"
+           FontSize="24"
+           FontFamily="{StaticResource Oswald}"
+           />
+
+
+        </Grid>
+        
+        
+        
+        
+        
+    </Viewbox>
+</UserControl>

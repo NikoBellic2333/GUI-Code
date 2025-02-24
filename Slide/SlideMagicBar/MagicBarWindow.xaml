@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MagicBarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:navigation="clr-namespace:NavigationBar;assembly=NavigationBar"
+        xmlns:james="https://jamesnet.dev/xaml/presentation"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Background="#222222"
+        Title="MagicBarWindow" Height="450" Width="800">
+    <Grid>
+        <navigation:MagicBar x:Name="bar" >
+            <ListBoxItem Content="Web" Tag="{x:Static james:IconType.Web}"/>
+            <ListBoxItem Content="Home" Tag="{x:Static james:IconType.Home}"/>
+            <ListBoxItem Content="Folder" Tag="{x:Static james:IconType.Folder}"/>
+            <ListBoxItem Content="Calendar" Tag="{x:Static james:IconType.CalendarMonth}"/>
+            <ListBoxItem Content="Image" Tag="{x:Static james:IconType.Image}"/>
+            <ListBoxItem Content="Account" Tag="{x:Static james:IconType.Account}"/>
+        </navigation:MagicBar>
+        <Slider x:Name="mySlide"
+            Minimum="0"
+            Maximum="5"
+            Width="250"
+            TickPlacement="BottomRight"
+            IsSnapToTickEnabled="True"
+            ValueChanged="mySlide_ValueChanged" Canvas.Left="310" Canvas.Top="30"/>
+
+
+    </Grid>
+</Window>

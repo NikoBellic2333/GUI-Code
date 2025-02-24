@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfApp1.UCMembers.UCMembers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.UCMembers"
+             mc:Ignorable="d" 
+             d:DesignHeight="57" d:DesignWidth="200">
+    <Grid>
+        <Rectangle RadiusX="8.917" RadiusY="8.917" Fill="#FFE2E1E1"/>
+        <StackPanel Orientation="Horizontal">
+            <Rectangle Height="40" Width="40" RadiusX="50" RadiusY="50" Margin="10,0,0,0">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="{Binding URL}" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel Margin="5,0,0,0">
+                <Label Content="{Binding Title}" Width="139" Height="30" FontSize="14"/>
+                <Label Content="{Binding SubTitle}" Width="139" Height="30" Margin="0,-8,0,0" FontSize="9" Foreground="#FF605C5C"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="WpfApp1.RollNumList.RollNum"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.RollNumList"
+             mc:Ignorable="d"  FontFamily="Impact"
+             d:DesignHeight="300" d:DesignWidth="250">
+    <Canvas x:Name="touchPad"               
+            ManipulationStarting="image_ManipulationStarting"  
+            ManipulationDelta="image_ManipulationDelta"
+            ManipulationInertiaStarting="touchPad_ManipulationInertiaStarting"
+            ManipulationCompleted="image_ManipulationCompleted"
+            >
+
+
+        <Label x:Name="Label_Pre_Behind" FontSize="26" Foreground="Gray" 
+        Width="240" Height="150"
+        IsManipulationEnabled="True"
+       VerticalAlignment="Top"  HorizontalContentAlignment="Center">
+        </Label>
+
+        <Label x:Name="Label_Pre" FontSize="30" Foreground="Gray" Width="240" 
+        IsManipulationEnabled="True" Height="150"
+       VerticalAlignment="Top" 
+       HorizontalContentAlignment="Center" >
+
+        </Label>
+
+        <Label x:Name="Label_Current" FontSize="34" Foreground="Blue"
+        IsManipulationEnabled="True" Width="240" Height="150"
+       VerticalAlignment="Top"  HorizontalContentAlignment="Center">
+        </Label>
+
+        <Label x:Name="Label_Next" FontSize="30"  Foreground="Gray" Width="240"
+       VerticalAlignment="Top"  IsManipulationEnabled="True" Height="150"
+       HorizontalContentAlignment="Center" RenderTransformOrigin="0.5,0.5">
+        </Label>
+
+        <Label x:Name="Label_Next_Behind" FontSize="26" Foreground="Gray"  
+       Width="240" IsManipulationEnabled="True" Height="150"
+       VerticalAlignment="Top"  HorizontalContentAlignment="Center">
+        </Label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Canvas>
+   
+</UserControl>

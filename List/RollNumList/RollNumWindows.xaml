@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp1.RollNumWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.RollNumList"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="RollNumWindows" Height="400" Width="583">
+    <Canvas Grid.Row="0" Margin="0,0,326,0">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkCyan" Offset="0.0"/>
+                <GradientStop Color="BlanchedAlmond" Offset="0.5"/>
+                <GradientStop Color="DarkCyan" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <local:RollNum x:Name="TestRollNum" HorizontalAlignment="Left" 
+                                VerticalAlignment="Top" Grid.Row="1" 
+                                Canvas.Right="0" Canvas.Bottom="0" 
+                                Canvas.Left="0" Canvas.Top="0"/>
+        <Slider x:Name="mySlide"
+            Minimum="0"
+            Maximum="11"
+            Width="250"
+            TickFrequency="1"
+            TickPlacement="BottomRight"
+            IsSnapToTickEnabled="True"
+            ValueChanged="mySlide_ValueChanged"
+            Canvas.Left="310"
+            Canvas.Top="30">
+            <Slider.Resources>
+                <!-- 自定义 TickBar 的样式 -->
+                <Style TargetType="TickBar">
+                    <Setter Property="Fill" Value="Black" />
+                    <!-- 刻度颜色设置为黑色 -->
+                </Style>
+            </Slider.Resources>
+        </Slider>
+
+
+
+    </Canvas>
+</Window>

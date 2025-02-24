@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.DashBoardDetentWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.DashBoard_Detent"
+        mc:Ignorable="d"
+        Title="DashBoardDetentWindows" Height="800" Width="1000">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <local:DashBoard_Detent Width="700" Height="700" x:Name="gauge"
+                                Title="DashBoard Detent"
+                                Min="0"
+                                Max="100"
+                                TickGap="10"
+                                Unit="unit"
+                                TickUnit="x100"
+                                Margin="-10,10,10,40"/>
+        <StackPanel Grid.Column="2">
+            <Slider x:Name="mySlide"
+                    Minimum="0"
+                    Maximum="100"
+                    Width="250"
+                    TickPlacement="BottomRight"
+                    TickFrequency="10"
+                    IsSnapToTickEnabled="True"
+                    ValueChanged="mySlide_ValueChanged"/>       
+        </StackPanel>
+    </Grid>
+</Window>
